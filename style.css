@@ -16,15 +16,17 @@ body{
 .flex-container{
     display: flex;
     background: gray;
-    flex-wrap: wrap-reverse; /*boxes goes up*/
+    flex-wrap: wrap-reverse; 
     flex-flow: column;
-    justify-content: flex-end;
     height: 700px;
+    align-items: center; /*postioning alongside cross axis (not the main axis) */
+    justify-content: center;
 }
 
 .box{
     height: 75px;
     flex-basis: 75px;
+    width: 50px;
 }
 
 .one{
