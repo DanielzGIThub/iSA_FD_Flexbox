@@ -17,12 +17,14 @@ body{
     display: flex;
     background: gray;
     flex-wrap: wrap-reverse; /*boxes goes up*/
-
+    flex-flow: column;
+    justify-content: flex-end;
+    height: 700px;
 }
 
 .box{
     height: 75px;
-    flex: 1 5 150px; /*flex-grow flex-shrink flex-basis*/
+    flex-basis: 75px;
 }
 
 .one{
