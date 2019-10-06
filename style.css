@@ -25,15 +25,15 @@ body{
 
 .one{
     background-color: red;
-    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .two{
     background-color: green;
-    flex-grow: 3;
+    flex-shrink: 3;
 }
 
 .three{
     background-color: blueviolet;
-    flex-grow: 2;
+    flex-shrink: 10; /*this box shrinks itself the most when browser size is being changed*/
 }
