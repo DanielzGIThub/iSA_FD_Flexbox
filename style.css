@@ -16,17 +16,14 @@ body{
 .flex-container{
     display: flex;
     background: gray;
-    flex-wrap: wrap-reverse; 
-    flex-flow: column;
-    height: 700px;
-    align-items: center; /*postioning alongside cross axis (not the main axis) */
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .box{
-    height: 75px;
     flex-basis: 75px;
     width: 50px;
+    text-align: center;
+    padding: 40px 0;
 }
 
 .one{
@@ -40,3 +37,7 @@ body{
 .three{
     background-color: blueviolet;
 }
+
+.one{order: 3;}
+.two{order: 1;}
+.three{order: 2;}
