@@ -15,7 +15,43 @@ body{
 
 /* menu base styles */
 
+nav ul{
+    list-style-type: none;
+    background-color: black;
+    padding: 0;
 
+}
+
+
+
+nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+
+nav a:hover{
+    background-color: grey;
+}
 
 
 /* flex styles */
+
+@media screen and (min-width: 768px){
+
+nav ul{
+
+    display: flex;
+
+}
+
+
+nav li{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0; /*the same woul be flex: 1 1 0;*/
+}
+}
