@@ -16,13 +16,13 @@ body{
 .flex-container{
     display: flex;
     background: gray;
-    flex-wrap: wrap; /*boxes goes to the next line*/
+    flex-wrap: wrap-reverse; /*boxes goes up*/
+
 }
 
 .box{
     height: 75px;
-    min-width: 300px;
-    flex-grow: 1; /*this makes the boxes fit to the windows after wrappin */
+    flex: 1 5 150px; /*flex-grow flex-shrink flex-basis*/
 }
 
 .one{
