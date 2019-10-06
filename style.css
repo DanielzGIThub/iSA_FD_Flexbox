@@ -16,24 +16,23 @@ body{
 .flex-container{
     display: flex;
     background: gray;
+    flex-wrap: wrap; /*boxes goes to the next line*/
 }
 
 .box{
     height: 75px;
-    min-width: 150px;
+    min-width: 300px;
+    flex-grow: 1; /*this makes the boxes fit to the windows after wrappin */
 }
 
 .one{
     background-color: red;
-    flex-shrink: 1;
 }
 
 .two{
     background-color: green;
-    flex-shrink: 3;
 }
 
 .three{
     background-color: blueviolet;
-    flex-shrink: 10; /*this box shrinks itself the most when browser size is being changed*/
 }
